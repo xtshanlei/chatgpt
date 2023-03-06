@@ -2,7 +2,6 @@ import openai
 import streamlit as st
 from message_log import message_log
 openai.api_key = st.secrets['api_key']
-st.write('test')
 def generate_response(message_log):
     # Use OpenAI's ChatCompletion API to get the chatbot's response
     response = openai.ChatCompletion.create(
